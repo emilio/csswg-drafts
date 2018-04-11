@@ -2767,10 +2767,7 @@ partial interface Window {
 The <dfn method for=Window>getComputedStyle(<var>elt</var>, <var>pseudoElt</var>)</dfn> method must run these
 steps:
 <ol>
- <li>Let <var>doc</var> be the
- {{Document}}
- associated with the <code>Window</code> object on
- which the method was invoked.
+ <li>Let <var>doc</var> be <var>elt</var>'s <a>node document</a>.
  <li>Let <var>obj</var> be <var>elt</var>.
  <li>If <var>pseudoElt</var> is as an
  <a>ASCII case-insensitive</a> match for
